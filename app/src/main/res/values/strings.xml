@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Firma</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="top_app_bar">Firma</string>
 </resources>
