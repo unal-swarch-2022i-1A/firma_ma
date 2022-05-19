@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Firma</string>
+    <string name="app_name">Firma Mobile Aplication</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
     <string name="logout">Cerrar sesión</string>
     <string name="top_app_bar">Firma</string>
 </resources>
