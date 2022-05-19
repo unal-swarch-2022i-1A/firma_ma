@@ -1,6 +1,10 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Firma Mobile Aplication</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
 
+=======
+    <string name="app_name">Firma</string>
+>>>>>>> 5d924a1c5d7efe662bb5d1fd0a68f22c1a0bbd82
 </resources>
