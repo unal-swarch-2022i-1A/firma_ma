@@ -38,8 +38,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     // GraphQL client
-    implementation 'com.apollographql.apollo3:apollo-runtime:3.3.0'
-    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'com.apollographql.apollo:apollo-runtime:2.5.11'
+    implementation 'com.squareup.okhttp3:okhttp:3.0.1'
 
     //Navigation
     def nav_version = "2.4.2"
