@@ -1,7 +1,8 @@
 plugins {
     id 'com.android.application'
-    id("com.apollographql.apollo").version("2.5.11")
+    id("com.apollographql.apollo3").version("3.3.0")
 }
+apply plugin: 'kotlin-android'
 
 android {
     compileSdk 32
@@ -37,11 +38,19 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-    implementation("com.apollographql.apollo:apollo-runtime:2.5.11")
-    implementation 'com.squareup.okhttp3:okhttp:3.0.1'
+    implementation("com.apollographql.apollo3:apollo-runtime:3.3.0")
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha02"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.1'
+    implementation "androidx.core:core-ktx:+"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
 
 }
 
 apollo {
     packageName.set("com.firma.mobile")
+}
+repositories {
+    mavenCentral()
 }
