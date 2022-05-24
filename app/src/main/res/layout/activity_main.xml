@@ -22,17 +22,43 @@
                 style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
                 android:fitsSystemWindows="true">
 
-                <com.google.android.material.appbar.MaterialToolbar
-                    android:id="@+id/topAppBar"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    app:title="@string/top_app_bar"
-                    app:navigationIcon="@drawable/ic_baseline_menu_24"
-                    style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
-                    android:background="@android:color/transparent"
-                    android:elevation="0dp" />
-
             </com.google.android.material.appbar.AppBarLayout>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:translationY="-200px" />
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                android:elevation="0dp"
+                app:navigationIcon="@drawable/ic_baseline_menu_24"
+                app:title="@string/top_app_bar" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:translationY="50px" />
+
+            <Button
+                android:id="@+id/buttonLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Iniciar sesión"
+                android:translationY="300px" />
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
         <com.google.android.material.navigation.NavigationView
@@ -43,17 +69,5 @@
 
     </androidx.drawerlayout.widget.DrawerLayout>
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.438" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
